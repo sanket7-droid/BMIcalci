@@ -1,0 +1,33 @@
+R_DEF: Internal format may change without notice
+local
+color bg
+color black
+color card
+color hint
+color mota
+color noo
+color normal
+color overweight
+color underWeight
+color white
+drawable button_background
+drawable edittext_background
+drawable gradient_background
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id abindex
+id abinfo
+id abresult
+id cvbutton
+id mainLayout
+id ppheight
+id ppweight
+id title
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.BMIcalci
+style Theme.BMIcalci
+xml backup_rules
+xml data_extraction_rules

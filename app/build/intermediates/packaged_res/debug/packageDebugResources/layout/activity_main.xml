@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Weight Input -->
+    <EditText
+        android:id="@+id/ppweight"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Enter Weight (kg)"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:backgroundTint="#607D8B"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Height Input -->
+    <EditText
+        android:id="@+id/ppheight"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Enter Height (cm)"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:backgroundTint="#607D8B"
+        app:layout_constraintTop_toBottomOf="@id/ppweight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/cvbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/ppheight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- BMI Index Result -->
+    <TextView
+        android:id="@+id/abindex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI: 0.0"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/cvbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <!-- BMI Description -->
+    <TextView
+        android:id="@+id/abresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="#3F51B5"
+        app:layout_constraintTop_toBottomOf="@id/abindex"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Info Text -->
+    <TextView
+        android:id="@+id/abinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Normal BMI: 18.5 - 24.9"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        app:layout_constraintTop_toBottomOf="@id/abresult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
