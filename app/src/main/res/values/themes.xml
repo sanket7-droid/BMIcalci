@@ -1,9 +1,8 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.BMIcalci" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+    <!-- Framework theme only: all UI is Jetpack Compose. Dark window background avoids a white flash on launch. -->
+    <style name="Theme.BMIcalci" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#0A0A0B</item>
+        <item name="android:statusBarColor">#0A0A0B</item>
+        <item name="android:navigationBarColor">#0A0A0B</item>
     </style>
-
-    <style name="Theme.BMIcalci" parent="Base.Theme.BMIcalci" />
 </resources>

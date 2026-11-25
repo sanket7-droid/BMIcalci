@@ -13,3 +13,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Build output and IDE state (added during Compose migration)
+/app/build/
+/.idea/
